@@ -71,7 +71,7 @@ for x, y in zip(months, sales):
 res = {"Hàm mũ": (evaluate(y_train, predict_exp(x_train, a, b)),
                   evaluate(y_test, predict_exp(x_test, a, b)))}
 
-# Đa thức bậc 1, 2, 3 để so sánh (khớp với thành viên làm mục 3.3)
+# Đa thức bậc 1, 2, 3 để so sánh
 polys = {}
 for d in (1, 2, 3):
     p = np.poly1d(np.polyfit(x_train, y_train, d))
